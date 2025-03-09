@@ -7,7 +7,7 @@ length = 43;
 lay = true;
 
 cap_hole_length = 3;
-tolerance = 0.4;
+tolerance = 0.5;
 
 bars = 3;
 
