@@ -50,7 +50,7 @@ module jig() // {{{
     difference()
     {
         d = cap_diameter * 3;
-        l = cap_hole_length * 5;
+        l = cap_hole_length * 3;
         union()
         {
             cylinder(h = l, d = d);
@@ -59,7 +59,10 @@ module jig() // {{{
                 sphere(r = d / 2);
             }
         }
-        cylinder(h = l, d = diameter + tolerance * 4);
+        translate([0, diameter + tolerance * 3])
+        {
+            cylinder(h = l, d = diameter + tolerance * 4);
+        }
     }
 } // }}}
 
