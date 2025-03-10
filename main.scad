@@ -59,9 +59,12 @@ module jig() // {{{
                 sphere(r = d / 2);
             }
         }
-        translate([0, diameter + tolerance * 3])
-        {
-            cylinder(h = l, d = diameter + tolerance * 4);
+        union(){
+            translate([0, diameter + tolerance * 3])
+            {
+                cylinder(h = l, d = diameter + tolerance * 4);
+                cylinder(h = 2, d = cap_diameter + tolerance * 2);
+            }
         }
     }
 } // }}}
