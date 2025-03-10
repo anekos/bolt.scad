@@ -2,7 +2,6 @@ $fn = 70;
 
 // Config {{{
 
-diameter = 3.0 - 0.6;
 length = 43;
 lay = true;
 
